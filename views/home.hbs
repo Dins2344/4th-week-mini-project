@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top " >
+  <div class="container-fluid">
+    <a class="navbar-brand" style="color:white ;" href="#">HOME</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarID"
+      aria-controls="navbarID"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" collapse navbar-collapse justify-content-end" id="navbarID">
+      <div class=" navbar-nav  ">
+        <div class="d-flex flex-row-reverse">
+            <a style="color:white ;" class="nav-link active  " aria-current="page" href="/logout">Logout</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-top:100px ;" >
+
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center">
+   
+    {{#each products}}
+      <div class="col-7 col-md-4 mt-3">
+        <div class="card">
+          <img
+            src={{image}}
+            class="card-img-top"
+            alt="Fissure in Sandstone"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{brand}}</h5>
+            <h6 class="card-title">{{model}}</h6>
+            <h6 class="card-title">{{price}}</h6>
+            
+            <a href="#!" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+
+      </div>
+    {{/each}}
+
+  </div>
+</div>
+
+</div>
+
